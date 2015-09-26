@@ -35,3 +35,9 @@ cacheSolve <- function(x, ...) {
         x$setInv(m)
         m
 }
+
+
+# test --------------------------------------------------------------------
+t <- makeCacheMatrix(matrix(rnorm(100),10,10))
+cacheSolve(t)
+cacheSolve(t)
